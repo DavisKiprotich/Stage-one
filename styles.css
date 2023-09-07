@@ -1,0 +1,50 @@
+body{
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #54ABFB;
+    opacity: 0.8;
+}
+img[data-testid = 'slackDisplayImage']{
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 2rem 0;
+    transform: rotate(-30deg);
+    transition: transform 0.3s ease-out;
+}
+body img:hover{
+    transform: scale(1.1);
+}
+h1{
+    font-family: cursive;
+}
+h1:hover{
+    color: aliceblue;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.time-zone {
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    flex: 1;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 5px;
+}
+a[data-testid="githubURL"]{
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+a[data-testid="githubURL"]:hover{
+    color:#3849e4;
+}

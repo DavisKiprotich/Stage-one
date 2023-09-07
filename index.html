@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>My Personal Dashboard</title>
+    <title>Personal Information</title>
 </head>
 <body>
-    <h1 data-testid="slackUserName">Davis Kiprotich</h1>
-    <img src="your-slack-profile-picture.jpg" alt="Davis Kiprotich" data-testid="slackDisplayImage">
+    <div>
+        <img src="image.jpeg" alt="Davis Kiprotich" data-testid="slackDisplayImage">
+        <h1 data-testid="slackUserName">Davis Kiprotich</h1>
+        <p data-testid="myTrack">Frontend</p>
+    </div>
     
-    <p data-testid="currentDayOfTheWeek">Sunday</p>
-    <p data-testid="currentUTCTime"></p>
-    
-    <p data-testid="myTrack">Frontend</p>
+    <div class="time-zone">
+        <p data-testid="currentDayOfTheWeek"></p>
+        <p data-testid="currentUTCTime"></p>
+    </div> 
     
     <a href="https://github.com/DavisKiprotich/Stage-one" data-testid="githubURL">Stage one</a>
     
