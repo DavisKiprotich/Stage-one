@@ -1,10 +1,9 @@
 body{
     padding: 30px;
     box-sizing: border-box;
-    border: 1px solid red;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: #54ABFB;
+    background-color: #828bdb;
     opacity: 0.8;
 }
 img[data-testid = 'slackDisplayImage']{
@@ -15,7 +14,7 @@ img[data-testid = 'slackDisplayImage']{
     transition: transform 0.3s ease-out;
 }
 body img:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 h1{
     font-family: cursive;
@@ -25,20 +24,32 @@ h1:hover{
     cursor: pointer;
     transition: transform 0.3s ease-out;
 }
+.details{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
 
-.time-zone {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 2rem;
-}
-.time-zone p{
-    flex: 1;
+.details p{
+    color: antiquewhite;
+    background: #1b1c1f;
+    padding: 10px 25px;
+    border: none;
+    text-decoration: none;
+    cursor: none;
     font-size: 18px;
-    margin: 5px 0;
-    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
-a[data-testid="githubURL"]{
+
+.details p:hover{
+    background: #fff;
+    color: #3849e4;
+}
+
+.details a[data-testid="githubURL"]{
     color: white;
     background: #1b1c1f;
     padding: 10px 25px;
@@ -49,7 +60,23 @@ a[data-testid="githubURL"]{
     border-radius: 5px;
     margin-bottom: 15px;
 }
-a[data-testid="githubURL"]:hover{
+
+.details a[data-testid="githubURL"]:hover{
     color:#3849e4;
     background: #fff;
 }
+
+.time-zone {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 2rem;
+    cursor: none;
+}
+.time-zone p{
+    flex: 1;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
