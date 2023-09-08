@@ -28,9 +28,11 @@ h1:hover{
 
 .time-zone {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 2rem;
 }
-p{
+.time-zone p{
     flex: 1;
     font-size: 18px;
     margin: 5px 0;
@@ -38,13 +40,16 @@ p{
 }
 a[data-testid="githubURL"]{
     color: white;
+    background: #1b1c1f;
     padding: 10px 25px;
     border: none;
     text-decoration: none;
     cursor: pointer;
     font-size: 18px;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 a[data-testid="githubURL"]:hover{
     color:#3849e4;
+    background: #fff;
 }
